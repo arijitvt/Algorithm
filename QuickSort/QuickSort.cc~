@@ -1,0 +1,10 @@
+#include<iostream>
+#include<cstdlib>
+using namespace std;
+
+#include "QuickSort.hh"
+
+int main(int argc, char **argv){
+  QuickSort *qSort = new QuickSort();
+  return 0;
+}
