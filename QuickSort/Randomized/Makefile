@@ -6,3 +6,7 @@ all: QuickSort.o
 
 QuickSort.o: QuickSort.cc QuickSort.hh
 	$(CC) -g -c QuickSort.cc
+
+clean:
+	rm -rf *.o
+	rm $(TARGET)
