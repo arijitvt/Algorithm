@@ -47,7 +47,7 @@ BST::BST(){
 }
 
 void BST::insert(int data){
-  Node *node = new Node(int data);
+  Node *node = new Node(data);
   Node *cur = head;
   Node *prev = cur;
   if(head == NULL){
@@ -56,24 +56,24 @@ void BST::insert(int data){
   }
   while(cur != NULL){
     prev = cur;
-    if(node.data >= cur.key){
-      cur = cur.right;
+    if(node->data >= cur->data){
+      cur = cur->right;
     }else{
-      cur = cur.left;
+      cur = cur->left;
     }
   }
-  if(data < prev.data){
-    prev.left = node;
+  if(data < prev->data){
+    prev->left = node;
   }else{
-    prev.right = node;
+    prev->right = node;
   }
 }
 
 void BST::inorder_traversal(Node *node){
   if(node != NULL){
-    inorder_traversal(node.left);
-    cout<<node.data<<endl;
-    inorder_traversal(node.right);
+    inorder_traversal(node->left);
+    cout<<node->data<<endl;
+    inorder_traversal(node->right);
   }
 }
 
