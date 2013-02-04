@@ -41,11 +41,7 @@ int UF::find_root(int item){
 
 bool UF::connect(int p, int q){
   if(p < MAX && q <MAX){
-    int root_1 = -999;
-    int root_2 = -999;
-    root_1 = find_root(p);
-    root_2 = find_root(q);
-    return root_1 == root_2;
+    return find_root(p) == find_root(q);
   }
   return false;
 }
