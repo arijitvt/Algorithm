@@ -1,0 +1,12 @@
+#ifndef CONTING_SORT_HH
+#define CONTING_SORT_HH
+
+cons int MAX_SIZE = 100;
+
+class ContingSort{
+private:
+  in
+public:
+};
+
+#endif

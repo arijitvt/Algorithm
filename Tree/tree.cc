@@ -1,6 +1,10 @@
 #include<iostream>
 #include<cstdlib>
 
+//This comment is used to 
+// Test the git connectivity for the 
+// git core 
+
 using namespace std;
 
 class Node{
@@ -36,7 +40,7 @@ Node::Node(int d, Node *l, Node *r){
 }
 
 void Node::setLeftChild(Node *l){
-  left = left;
+  left = l;
 }
 
 void Node::setRightChild(Node *r){
@@ -106,6 +110,26 @@ void preOrderTraversal(Node *node){
   preOrderTraversal(node->getRightChild());
 }
 
+void inOrderTraversal(Node *node){
+  if(node == NULL){
+    return;
+  }
+
+  inOrderTraversal(node->getLeftChild());
+  cout<<node->getData()<<endl;
+  inOrderTraversal(node->getRightChild());
+}
+
+void postOrderTraversal(Node *node){
+  if(node == NULL){
+    return;
+  }
+
+  postOrderTraversal(node->getLeftChild());
+  postOrderTraversal(node->getRightChild());
+  cout<<node->getData()<<endl;
+}
+
 int main(){
   Tree t;
   for(int i = 0 ; i < 5; ++i){
@@ -113,6 +137,11 @@ int main(){
     cout<<"From : "<<dat<<endl;
     t.addNewNode(dat);
   }
+  cout<<"\nPre-Order Traversal: "<<endl;
   preOrderTraversal(t.getHead());
+  cout<<"\nIn-Order Traversal: "<<endl;
+  inOrderTraversal(t.getHead());
+  cout<<"\nPost-Order Traversal : "<<endl;
+  postOrderTraversal(t.getHead());
   return 0;
 }
