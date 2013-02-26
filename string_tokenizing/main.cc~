@@ -1,0 +1,17 @@
+#include <iostream>
+#include <fstream>
+#include <string>
+#include <sstream>
+
+void tokenize_string(string input){
+  sstream stream(input);
+  string output;
+  while(stream){
+    getline(stream,data," ");
+    cout<<stream<<endl;
+  }
+}
+
+int main(int *argc, char **argv){
+  return 0;
+}
