@@ -1,0 +1,53 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BLACK	./tree.cpp	/^	   BLACK,$/;"	e	enum:Node::COLOR	file:
+COLOR	./tree.cpp	/^	enum COLOR {$/;"	g	struct:Node	file:	access:public
+Node	./tree.cpp	/^	Node(int k = 0);$/;"	p	struct:Node	file:	access:public	signature:(int k = 0)
+Node	./tree.cpp	/^Node::Node(int  k) {$/;"	f	class:Node	signature:(int k)
+Node	./tree.cpp	/^struct Node {$/;"	s	file:
+Node	./tree.cpp	/^typedef struct Node Node;$/;"	t	typeref:struct:Node	file:
+Node::BLACK	./tree.cpp	/^	   BLACK,$/;"	e	enum:Node::COLOR	file:
+Node::COLOR	./tree.cpp	/^	enum COLOR {$/;"	g	struct:Node	file:	access:public
+Node::Node	./tree.cpp	/^	Node(int k = 0);$/;"	p	struct:Node	file:	access:public	signature:(int k = 0)
+Node::Node	./tree.cpp	/^Node::Node(int  k) {$/;"	f	class:Node	signature:(int k)
+Node::RED	./tree.cpp	/^	   RED$/;"	e	enum:Node::COLOR	file:
+Node::color	./tree.cpp	/^	int color;$/;"	m	struct:Node	file:	access:public
+Node::key	./tree.cpp	/^	int key;$/;"	m	struct:Node	file:	access:public
+Node::left	./tree.cpp	/^	struct Node *left;$/;"	m	struct:Node	typeref:struct:Node::Node	file:	access:public
+Node::right	./tree.cpp	/^	struct Node *right;$/;"	m	struct:Node	typeref:struct:Node::Node	file:	access:public
+RED	./tree.cpp	/^	   RED$/;"	e	enum:Node::COLOR	file:
+Tree	./tree.cpp	/^	Tree();$/;"	p	class:Tree	file:	access:public	signature:()
+Tree	./tree.cpp	/^Tree::Tree() {$/;"	f	class:Tree	signature:()
+Tree	./tree.cpp	/^class Tree {$/;"	c	file:
+Tree::Tree	./tree.cpp	/^	Tree();$/;"	p	class:Tree	file:	access:public	signature:()
+Tree::Tree	./tree.cpp	/^Tree::Tree() {$/;"	f	class:Tree	signature:()
+Tree::head	./tree.cpp	/^	Node *head;$/;"	m	class:Tree	file:	access:public
+Tree::inorderTraversal	./tree.cpp	/^	void inorderTraversal(Node *node) ; $/;"	p	class:Tree	file:	access:public	signature:(Node *node)
+Tree::inorderTraversal	./tree.cpp	/^void Tree::inorderTraversal(Node *node) {$/;"	f	class:Tree	signature:(Node *node)
+Tree::insertData	./tree.cpp	/^	void insertData(int key);$/;"	p	class:Tree	file:	access:public	signature:(int key)
+Tree::insertData	./tree.cpp	/^void Tree::insertData(int key ){$/;"	f	class:Tree	signature:(int key )
+Tree::postorderTraversal	./tree.cpp	/^	void postorderTraversal(Node *node);$/;"	p	class:Tree	file:	access:public	signature:(Node *node)
+Tree::postorderTraversal	./tree.cpp	/^void Tree::postorderTraversal(Node *node) {$/;"	f	class:Tree	signature:(Node *node)
+Tree::preorderTraversal	./tree.cpp	/^	void preorderTraversal(Node *node) ;$/;"	p	class:Tree	file:	access:public	signature:(Node *node)
+Tree::preorderTraversal	./tree.cpp	/^void Tree::preorderTraversal(Node *node) {$/;"	f	class:Tree	signature:(Node *node)
+Tree::sentinel	./tree.cpp	/^	Node *sentinel;	$/;"	m	class:Tree	file:	access:public
+color	./tree.cpp	/^	int color;$/;"	m	struct:Node	file:	access:public
+head	./tree.cpp	/^	Node *head;$/;"	m	class:Tree	file:	access:public
+inorderTraversal	./tree.cpp	/^	void inorderTraversal(Node *node) ; $/;"	p	class:Tree	file:	access:public	signature:(Node *node)
+inorderTraversal	./tree.cpp	/^void Tree::inorderTraversal(Node *node) {$/;"	f	class:Tree	signature:(Node *node)
+insertData	./tree.cpp	/^	void insertData(int key);$/;"	p	class:Tree	file:	access:public	signature:(int key)
+insertData	./tree.cpp	/^void Tree::insertData(int key ){$/;"	f	class:Tree	signature:(int key )
+key	./tree.cpp	/^	int key;$/;"	m	struct:Node	file:	access:public
+left	./tree.cpp	/^	struct Node *left;$/;"	m	struct:Node	typeref:struct:Node::Node	file:	access:public
+main	./tree.cpp	/^int main() {$/;"	f	signature:()
+populate	./tree.cpp	/^void populate(Tree *tree) {$/;"	f	signature:(Tree *tree)
+postorderTraversal	./tree.cpp	/^	void postorderTraversal(Node *node);$/;"	p	class:Tree	file:	access:public	signature:(Node *node)
+postorderTraversal	./tree.cpp	/^void Tree::postorderTraversal(Node *node) {$/;"	f	class:Tree	signature:(Node *node)
+preorderTraversal	./tree.cpp	/^	void preorderTraversal(Node *node) ;$/;"	p	class:Tree	file:	access:public	signature:(Node *node)
+preorderTraversal	./tree.cpp	/^void Tree::preorderTraversal(Node *node) {$/;"	f	class:Tree	signature:(Node *node)
+right	./tree.cpp	/^	struct Node *right;$/;"	m	struct:Node	typeref:struct:Node::Node	file:	access:public
+sentinel	./tree.cpp	/^	Node *sentinel;	$/;"	m	class:Tree	file:	access:public
